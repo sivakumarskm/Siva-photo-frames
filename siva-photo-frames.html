@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIVA PHOTO FRAMES – Premium Luxury Frames, Erode</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;600;700;900&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ========== CSS VARIABLES ========== */
+:root {
+  --cream:     #fdf8f0;
+  --cream2:    #f5ede0;
+  --gold:      #b8892a;
+  --gold-lt:   #d4a84b;
+  --gold-pale: #f0d898;
+  --gold-dark: #8a6318;
+  --white:     #ffffff;
+  --black:     #1a1410;
+  --charcoal:  #2e2820;
+  --text:      #3d3228;
+  --text-lt:   #7a6a58;
+  --border:    rgba(184,137,42,0.25);
+  --shadow:    0 8px 48px rgba(139,100,30,0.13);
+  --radius:    6px;
+  --transition: 0.38s cubic-bezier(.4,0,.2,1);
+}
+
+/* ========== RESET ========== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+
+/* ========== FLORAL BACKGROUND PATTERN ========== */
+body::before{
+  content:'';
+  position:fixed;inset:0;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(212,168,75,0.07) 0%, transparent 50%),
+    radial-gradient(circle at 85% 75%, rgba(212,168,75,0.06) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-width='0.4' opacity='0.18'%3E%3Ccircle cx='60' cy='60' r='30'/%3E%3Ccircle cx='60' cy='60' r='20'/%3E%3Cpath d='M60 30 Q75 45 60 60 Q45 45 60 30'/%3E%3Cpath d='M60 90 Q75 75 60 60 Q45 75 60 90'/%3E%3Cpath d='M30 60 Q45 75 60 60 Q45 45 30 60'/%3E%3Cpath d='M90 60 Q75 75 60 60 Q75 45 90 60'/%3E%3Ccircle cx='10' cy='10' r='4'/%3E%3Ccircle cx='110' cy='110' r='4'/%3E%3Ccircle cx='10' cy='110' r='4'/%3E%3Ccircle cx='110' cy='10' r='4'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: auto, auto, 120px 120px;
+  pointer-events:none;z-index:0;
+}
+body>*{position:relative;z-index:1}
+
+/* ========== HEADER ========== */
+header{
+  background: linear-gradient(135deg, #1a1410 0%, #2e2416 50%, #1a1410 100%);
+  border-bottom: 1px solid var(--gold);
+  position:sticky;top:0;z-index:1000;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.35);
+}
+.header-top{
+  display:flex;align-items:center;justify-content:space-between;
+  padding: 14px 5%;
+  border-bottom:1px solid rgba(184,137,42,0.2);
+}
+.logo-wrap{display:flex;align-items:center;gap:14px}
+.logo-icon{
+  width:52px;height:52px;
+  border:2px solid var(--gold);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Cinzel',serif;font-size:20px;font-weight:700;color:var(--gold);
+  background:rgba(184,137,42,0.08);
+  flex-shrink:0;
+}
+.logo-text{
+  font-family:'Cinzel',serif;
+  font-size:clamp(16px,2.2vw,24px);
+  font-weight:700;
+  color:var(--gold-lt);
+  letter-spacing:3px;
+  line-height:1.1;
+}
+.logo-sub{
+  font-family:'Jost',sans-serif;font-size:10px;
+  color:var(--gold-pale);letter-spacing:4px;
+  text-transform:uppercase;margin-top:2px;opacity:0.7;
+}
+.header-contact{display:flex;gap:24px;align-items:center}
+.contact-item{
+  font-size:12px;color:rgba(240,216,152,0.8);
+  display:flex;align-items:center;gap:6px;letter-spacing:0.5px;
+}
+.contact-item span.ico{font-size:15px}
+.contact-item a{color:rgba(240,216,152,0.85);transition:color 0.2s}
+.contact-item a:hover{color:var(--gold-lt)}
+
+/* ========== NAV ========== */
+nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding: 0 5%;
+}
+.nav-links{display:flex;gap:0}
+.nav-links a{
+  font-family:'Cinzel',serif;font-size:11.5px;letter-spacing:2px;
+  color:rgba(240,216,152,0.75);
+  padding:14px 20px;
+  display:block;
+  border-bottom:2px solid transparent;
+  transition:var(--transition);
+  text-transform:uppercase;
+}
+.nav-links a:hover,.nav-links a.active{
+  color:var(--gold-lt);
+  border-bottom-color:var(--gold-lt);
+}
+.nav-cta{
+  background:var(--gold);
+  color:var(--black) !important;
+  padding:9px 22px !important;
+  border-radius:30px;
+  font-weight:600;
+  font-size:11px !important;
+  letter-spacing:2px !important;
+  border-bottom:none !important;
+  margin-left:12px;
+  transition:background var(--transition) !important;
+}
+.nav-cta:hover{background:var(--gold-lt) !important;}
+
+/* ========== PAGE SYSTEM ========== */
+.page{display:none;animation:fadeIn 0.5s ease}
+.page.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+/* ========== HERO SECTION ========== */
+.hero{
+  min-height:88vh;
+  display:flex;align-items:center;
+  padding: 80px 5%;
+  position:relative;overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background: linear-gradient(135deg,
+    #1e1a12 0%,
+    #2d2416 30%,
+    #1a1410 60%,
+    #231e14 100%
+  );
+}
+.hero-bg::after{
+  content:'';position:absolute;inset:0;
+  background: radial-gradient(ellipse 70% 70% at 70% 50%, rgba(184,137,42,0.12) 0%, transparent 70%);
+}
+.hero-gold-line{
+  position:absolute;left:0;right:0;top:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.hero-content{
+  position:relative;z-index:2;
+  max-width:680px;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:10px;
+  border:1px solid rgba(184,137,42,0.45);
+  padding:7px 18px;border-radius:30px;
+  font-size:11px;letter-spacing:3px;color:var(--gold-pale);
+  font-family:'Cinzel',serif;text-transform:uppercase;
+  margin-bottom:28px;
+  background:rgba(184,137,42,0.07);
+}
+.hero-badge::before{content:'✦';font-size:9px;color:var(--gold)}
+.hero h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(38px,6vw,72px);
+  font-weight:600;color:var(--white);
+  line-height:1.08;letter-spacing:-1px;
+  margin-bottom:22px;
+}
+.hero h1 em{color:var(--gold-lt);font-style:italic}
+.hero p{
+  font-size:15px;line-height:1.75;color:rgba(255,255,255,0.62);
+  margin-bottom:36px;max-width:500px;letter-spacing:0.3px;
+}
+.btn-row{display:flex;gap:16px;flex-wrap:wrap}
+.btn-gold{
+  background:linear-gradient(135deg,var(--gold-dark),var(--gold),var(--gold-lt));
+  color:var(--black);
+  font-family:'Cinzel',serif;font-size:12px;letter-spacing:2px;
+  padding:14px 32px;border-radius:30px;
+  border:none;cursor:pointer;font-weight:600;
+  transition:var(--transition);
+  box-shadow:0 4px 24px rgba(184,137,42,0.35);
+  text-transform:uppercase;display:inline-flex;align-items:center;gap:8px;
+}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(184,137,42,0.5)}
+.btn-outline{
+  border:1px solid rgba(184,137,42,0.6);
+  color:var(--gold-pale);
+  font-family:'Cinzel',serif;font-size:12px;letter-spacing:2px;
+  padding:14px 32px;border-radius:30px;
+  background:transparent;cursor:pointer;
+  transition:var(--transition);text-transform:uppercase;display:inline-flex;align-items:center;gap:8px;
+}
+.btn-outline:hover{background:rgba(184,137,42,0.1);border-color:var(--gold-lt)}
+.btn-whatsapp{
+  background:linear-gradient(135deg,#1a7a45,#25d366);
+  color:white;font-family:'Cinzel',serif;font-size:11px;
+  letter-spacing:2px;padding:14px 28px;border-radius:30px;
+  border:none;cursor:pointer;font-weight:600;
+  transition:var(--transition);display:inline-flex;align-items:center;gap:9px;
+  text-transform:uppercase;
+}
+.btn-whatsapp:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,0.35)}
+.btn-buynow{
+  background:linear-gradient(135deg,var(--black),#3d2e1a);
+  color:var(--gold-pale);
+  font-family:'Cinzel',serif;font-size:12px;letter-spacing:2px;
+  padding:14px 32px;border-radius:30px;
+  border:1px solid rgba(184,137,42,0.5);cursor:pointer;font-weight:600;
+  transition:var(--transition);text-transform:uppercase;display:inline-flex;align-items:center;gap:8px;
+}
+.btn-buynow:hover{background:var(--gold);color:var(--black);border-color:var(--gold)}
+
+/* HERO FRAME SHOWCASE */
+.hero-visual{
+  position:absolute;right:3%;top:50%;transform:translateY(-50%);
+  width:min(480px, 42vw);
+}
+.frame-showcase{
+  position:relative;
+}
+.frame-outer{
+  background:linear-gradient(135deg,#3a2e1a,#b8892a,#8a6318,#d4a84b,#3a2e1a);
+  padding:12px;border-radius:4px;
+  box-shadow: 0 20px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(212,168,75,0.3),
+              inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.frame-inner{
+  background:#0d0b08;
+  overflow:hidden;border-radius:2px;
+  position:relative;
+}
+.frame-inner img,.frame-canvas{
+  width:100%;height:280px;object-fit:cover;display:block;
+  background:linear-gradient(135deg,#1a1410,#2d2416);
+}
+.frame-canvas{
+  display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:10px;
+}
+.frame-canvas .fc-icon{font-size:48px;opacity:0.5}
+.frame-canvas .fc-label{font-family:'Cormorant Garamond',serif;font-size:18px;color:rgba(212,168,75,0.6);letter-spacing:3px}
+
+/* ========== SECTION HEADERS ========== */
+.section-header{text-align:center;margin-bottom:60px;padding-top:80px}
+.section-kicker{
+  font-family:'Cinzel',serif;font-size:11px;letter-spacing:4px;
+  color:var(--gold);text-transform:uppercase;margin-bottom:14px;
+  display:flex;align-items:center;justify-content:center;gap:14px;
+}
+.section-kicker::before,.section-kicker::after{content:'';width:40px;height:1px;background:var(--gold-pale);opacity:0.4}
+.section-header h2{
+  font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4.5vw,52px);
+  font-weight:600;color:var(--charcoal);letter-spacing:-0.5px;line-height:1.1;
+}
+.section-header h2 em{color:var(--gold-dark);font-style:italic}
+.section-header p{
+  font-size:15px;color:var(--text-lt);max-width:520px;
+  margin:16px auto 0;line-height:1.7;
+}
+.gold-divider{
+  width:80px;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  margin:20px auto 0;
+}
+
+/* ========== PRODUCT CARDS ========== */
+.products-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+  gap:28px;padding:0 5% 80px;
+}
+.product-card{
+  background:var(--white);
+  border:1px solid rgba(184,137,42,0.18);
+  border-radius:12px;
+  overflow:hidden;
+  transition:var(--transition);
+  cursor:pointer;
+  box-shadow:0 4px 24px rgba(139,100,30,0.07);
+}
+.product-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 16px 56px rgba(139,100,30,0.16);
+  border-color:rgba(184,137,42,0.4);
+}
+.card-img{
+  height:220px;overflow:hidden;position:relative;
+  background:linear-gradient(135deg,#1a1410,#2d2416);
+}
+.card-img-canvas{
+  width:100%;height:100%;
+  display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;
+  position:relative;
+}
+.card-frame-border{
+  position:absolute;
+  background:transparent;
+}
+.card-badge-size{
+  position:absolute;top:14px;left:14px;
+  background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);
+  border:1px solid rgba(184,137,42,0.5);
+  color:var(--gold-pale);font-family:'Cinzel',serif;
+  font-size:10px;letter-spacing:2px;padding:5px 12px;border-radius:20px;
+}
+.card-price-badge{
+  position:absolute;top:14px;right:14px;
+  background:linear-gradient(135deg,var(--gold-dark),var(--gold));
+  color:var(--black);font-family:'Cormorant Garamond',serif;
+  font-size:16px;font-weight:700;padding:6px 14px;border-radius:20px;
+  box-shadow:0 4px 14px rgba(184,137,42,0.4);
+}
+.card-body{padding:22px}
+.card-body h3{
+  font-family:'Cormorant Garamond',serif;font-size:22px;
+  font-weight:600;color:var(--charcoal);margin-bottom:6px;
+}
+.card-body p{font-size:13px;color:var(--text-lt);line-height:1.6;margin-bottom:16px}
+.card-footer{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 22px;border-top:1px solid rgba(184,137,42,0.12);
+  background:rgba(245,237,224,0.4);
+}
+.card-price{
+  font-family:'Cormorant Garamond',serif;font-size:22px;
+  font-weight:700;color:var(--gold-dark);
+}
+.card-price span{font-size:13px;font-family:'Jost',sans-serif;color:var(--text-lt);font-weight:400}
+.btn-card{
+  background:var(--gold);color:var(--black);
+  font-family:'Cinzel',serif;font-size:10px;letter-spacing:1.5px;
+  padding:9px 18px;border-radius:20px;border:none;cursor:pointer;
+  font-weight:600;text-transform:uppercase;transition:var(--transition);
+}
+.btn-card:hover{background:var(--gold-dark);color:var(--white)}
+
+/* ========== PRODUCT DETAIL PAGE ========== */
+.product-detail{padding:60px 5% 80px}
+.detail-breadcrumb{
+  font-size:12px;color:var(--text-lt);letter-spacing:1px;
+  margin-bottom:40px;display:flex;gap:8px;align-items:center;
+}
+.detail-breadcrumb span{color:var(--gold)}
+.detail-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;
+}
+.detail-frame-wrap{position:relative}
+.main-frame-display{
+  background:linear-gradient(135deg,#1e1a12,#2d2416);
+  border-radius:8px;overflow:hidden;padding:20px;
+  box-shadow:var(--shadow);
+}
+.frame-preview{
+  display:flex;align-items:center;justify-content:center;
+  min-height:400px;position:relative;
+}
+.fp-outer{
+  background:linear-gradient(135deg,#3a2e1a,#b8892a,#8a6318,#d4a84b,#3a2e1a);
+  padding:14px;border-radius:4px;
+  box-shadow:0 12px 48px rgba(0,0,0,0.5);
+}
+.fp-inner{
+  background:#0d0b08;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+}
+.fp-canvas{
+  display:flex;align-items:center;justify-content:center;flex-direction:column;
+  gap:12px;color:rgba(212,168,75,0.5);
+}
+.fp-canvas .icon{font-size:64px}
+.fp-canvas .label{font-family:'Cormorant Garamond',serif;font-size:20px;letter-spacing:4px}
+
+/* FRAME STYLES BY TYPE */
+.frame-gold .fp-outer{background:linear-gradient(135deg,#c8962a,#f0d060,#b8892a,#e8c450,#8a6318)}
+.frame-silver .fp-outer{background:linear-gradient(135deg,#9aa0a8,#d8dde4,#8a9098,#c8cdd4,#606870)}
+.frame-black .fp-outer{background:linear-gradient(135deg,#1a1a1a,#404040,#0d0d0d,#505050,#1a1a1a)}
+.frame-wood .fp-outer{background:linear-gradient(135deg,#5c3d1e,#8b5e3c,#4a2c10,#7a4e30,#3d2008)}
+
+.detail-info{}
+.product-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(32px,4vw,48px);font-weight:600;color:var(--charcoal);
+  line-height:1.05;margin-bottom:10px;
+}
+.product-title em{color:var(--gold-dark);font-style:italic}
+.product-rating{
+  display:flex;align-items:center;gap:10px;margin-bottom:18px;
+}
+.stars{color:var(--gold);font-size:16px;letter-spacing:2px}
+.rating-count{font-size:13px;color:var(--text-lt)}
+.product-price-wrap{
+  background:linear-gradient(135deg,rgba(184,137,42,0.06),rgba(184,137,42,0.12));
+  border:1px solid rgba(184,137,42,0.25);
+  border-radius:8px;padding:20px 24px;margin-bottom:28px;
+}
+.price-label{font-size:11px;letter-spacing:2px;color:var(--text-lt);text-transform:uppercase;margin-bottom:4px}
+.price-main{
+  font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:700;
+  color:var(--gold-dark);line-height:1;
+}
+.price-note{font-size:12px;color:var(--text-lt);margin-top:4px}
+.spec-table{margin-bottom:28px}
+.spec-table h4{
+  font-family:'Cinzel',serif;font-size:12px;letter-spacing:3px;
+  color:var(--gold);text-transform:uppercase;margin-bottom:14px;
+  padding-bottom:8px;border-bottom:1px solid rgba(184,137,42,0.2);
+}
+.spec-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:10px 0;border-bottom:1px solid rgba(184,137,42,0.08);
+}
+.spec-key{font-size:13px;color:var(--text-lt)}
+.spec-val{font-size:13px;font-weight:600;color:var(--charcoal)}
+.feature-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.chip{
+  border:1px solid rgba(184,137,42,0.35);
+  background:rgba(184,137,42,0.05);
+  color:var(--gold-dark);font-size:11.5px;letter-spacing:1px;
+  padding:6px 14px;border-radius:20px;
+}
+.action-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:32px}
+.detail-desc{
+  background:rgba(245,237,224,0.5);border-radius:8px;
+  padding:24px;border:1px solid rgba(184,137,42,0.12);
+}
+.detail-desc h4{
+  font-family:'Cinzel',serif;font-size:12px;letter-spacing:3px;
+  color:var(--gold);margin-bottom:12px;text-transform:uppercase;
+}
+.detail-desc p{font-size:14px;line-height:1.8;color:var(--text-lt)}
+
+/* ========== ABOUT SECTION ========== */
+.about-section{padding:80px 5%;background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-visual{
+  display:grid;grid-template-columns:1fr 1fr;gap:14px;
+}
+.about-frame-card{
+  background:linear-gradient(135deg,#1e1a12,#2d2416);
+  border-radius:8px;padding:24px;
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+  border:1px solid rgba(184,137,42,0.2);transition:var(--transition);
+}
+.about-frame-card:hover{transform:translateY(-4px);border-color:var(--gold)}
+.about-frame-card .afc-icon{font-size:36px}
+.about-frame-card .afc-type{
+  font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;
+  color:var(--gold-pale);text-transform:uppercase;
+}
+.about-frame-card.featured{
+  grid-column:span 2;
+  flex-direction:row;justify-content:center;gap:20px;
+}
+.about-text h2{
+  font-family:'Cormorant Garamond',serif;font-size:44px;
+  font-weight:600;color:var(--charcoal);line-height:1.08;margin-bottom:20px;
+}
+.about-text h2 em{color:var(--gold-dark);font-style:italic}
+.about-text p{font-size:14.5px;line-height:1.8;color:var(--text-lt);margin-bottom:16px}
+.about-stats{display:flex;gap:28px;margin-top:32px}
+.stat-item{text-align:center}
+.stat-num{
+  font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;
+  color:var(--gold-dark);line-height:1;
+}
+.stat-label{font-size:12px;letter-spacing:2px;color:var(--text-lt);text-transform:uppercase;margin-top:4px}
+
+/* ========== CONTACT SECTION ========== */
+.contact-section{padding:80px 5%;background:var(--cream2)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contact-info-card{
+  background:linear-gradient(135deg,#1e1a12,#2d2416);
+  border-radius:12px;padding:40px;
+  border:1px solid rgba(184,137,42,0.25);
+}
+.contact-info-card h3{
+  font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;
+  color:var(--gold-lt);margin-bottom:8px;
+}
+.contact-info-card .sub{color:rgba(240,216,152,0.6);font-size:13px;letter-spacing:1px;margin-bottom:32px}
+.contact-item-row{
+  display:flex;align-items:flex-start;gap:16px;
+  padding:16px 0;border-bottom:1px solid rgba(184,137,42,0.12);
+}
+.contact-item-row:last-child{border:none}
+.ci-icon{
+  width:42px;height:42px;border-radius:50%;
+  background:rgba(184,137,42,0.12);
+  border:1px solid rgba(184,137,42,0.3);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;flex-shrink:0;
+}
+.ci-text .ci-label{font-size:11px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:3px}
+.ci-text .ci-val{font-size:14px;color:rgba(240,216,152,0.85);line-height:1.5}
+.map-placeholder{
+  background:linear-gradient(135deg,#1e1a12,#2d2416);
+  border-radius:12px;overflow:hidden;
+  border:1px solid rgba(184,137,42,0.25);
+  min-height:380px;
+  display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;
+}
+.map-placeholder .map-icon{font-size:56px;opacity:0.5}
+.map-placeholder p{color:rgba(240,216,152,0.5);font-size:14px;letter-spacing:1px}
+.map-placeholder a{
+  color:var(--gold-lt);font-size:13px;text-decoration:underline;
+}
+
+/* ========== FOOTER ========== */
+footer{
+  background:linear-gradient(135deg,#0d0b08,#1a1410,#0d0b08);
+  border-top:1px solid rgba(184,137,42,0.25);
+  padding:60px 5% 30px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px;
+  padding-bottom:40px;border-bottom:1px solid rgba(184,137,42,0.12);
+  margin-bottom:28px;
+}
+.footer-brand .fb-logo{
+  font-family:'Cinzel',serif;font-size:20px;font-weight:700;
+  color:var(--gold-lt);letter-spacing:3px;margin-bottom:8px;
+}
+.footer-brand p{font-size:13px;color:rgba(240,216,152,0.5);line-height:1.7;margin-bottom:20px}
+.social-row{display:flex;gap:10px}
+.social-btn{
+  width:36px;height:36px;border-radius:50%;
+  border:1px solid rgba(184,137,42,0.3);
+  background:rgba(184,137,42,0.06);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--gold-pale);font-size:16px;transition:var(--transition);cursor:pointer;
+}
+.social-btn:hover{background:var(--gold);color:var(--black);border-color:var(--gold)}
+.footer-col h4{
+  font-family:'Cinzel',serif;font-size:11px;letter-spacing:3px;
+  color:var(--gold);text-transform:uppercase;margin-bottom:16px;
+}
+.footer-col ul li{margin-bottom:9px}
+.footer-col ul li a{
+  font-size:13px;color:rgba(240,216,152,0.5);transition:color 0.2s;
+}
+.footer-col ul li a:hover{color:var(--gold-lt)}
+.footer-hours p{font-size:13px;color:rgba(240,216,152,0.5);line-height:1.8}
+.footer-bottom{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:12px;color:rgba(240,216,152,0.3);letter-spacing:1px;
+}
+.footer-bottom a{color:rgba(212,168,75,0.5)}
+
+/* ========== GALLERY PAGE ========== */
+.gallery-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:20px;padding:0 5% 80px;
+}
+.gallery-item{
+  background:linear-gradient(135deg,#1e1a12,#2d2416);
+  border-radius:8px;overflow:hidden;
+  border:1px solid rgba(184,137,42,0.2);
+  transition:var(--transition);cursor:pointer;aspect-ratio:4/3;
+  display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:12px;
+  position:relative;
+}
+.gallery-item:hover{border-color:var(--gold);transform:scale(1.02)}
+.gallery-item .gi-frame-icon{font-size:48px;opacity:0.5;color:var(--gold-pale)}
+.gallery-item .gi-label{
+  font-family:'Cormorant Garamond',serif;font-size:16px;
+  color:rgba(212,168,75,0.6);letter-spacing:2px;
+}
+.gallery-item .gi-hover{
+  position:absolute;inset:0;background:rgba(184,137,42,0.85);
+  display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;
+  opacity:0;transition:var(--transition);
+}
+.gallery-item:hover .gi-hover{opacity:1}
+.gi-hover h4{font-family:'Cinzel',serif;font-size:13px;letter-spacing:2px;color:var(--black)}
+.gi-hover p{font-size:12px;color:rgba(0,0,0,0.7)}
+
+/* ========== PRICING TABLE ========== */
+.pricing-section{padding:0 5% 80px}
+.pricing-table{
+  background:var(--white);border-radius:12px;overflow:hidden;
+  border:1px solid rgba(184,137,42,0.2);box-shadow:var(--shadow);
+}
+.pt-header{
+  background:linear-gradient(135deg,#1e1a12,#2d2416);
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1.5fr;
+  padding:18px 28px;
+}
+.pt-header span{
+  font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;
+  color:var(--gold);text-transform:uppercase;
+}
+.pt-row{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1.5fr;
+  padding:18px 28px;align-items:center;
+  border-bottom:1px solid rgba(184,137,42,0.08);
+  transition:background 0.2s;
+}
+.pt-row:hover{background:rgba(184,137,42,0.03)}
+.pt-row:last-child{border-bottom:none}
+.pt-name{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--charcoal)}
+.pt-size{font-size:13px;color:var(--text-lt)}
+.pt-material{font-size:13px;color:var(--text-lt)}
+.pt-price{
+  font-family:'Cormorant Garamond',serif;font-size:22px;
+  font-weight:700;color:var(--gold-dark);
+}
+.btn-pt{
+  background:transparent;border:1px solid rgba(184,137,42,0.4);
+  color:var(--gold);font-family:'Cinzel',serif;font-size:10px;
+  letter-spacing:1.5px;padding:8px 18px;border-radius:20px;cursor:pointer;
+  transition:var(--transition);text-transform:uppercase;width:fit-content;
+}
+.btn-pt:hover{background:var(--gold);color:var(--black)}
+
+/* ========== RESPONSIVE ========== */
+@media(max-width:1024px){
+  .hero-visual{width:40vw}
+  .detail-grid{gap:40px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .header-contact{display:none}
+  .hero{min-height:auto;padding:50px 5% 40px}
+  .hero-visual{display:none}
+  .detail-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .pt-header,.pt-row{grid-template-columns:1.5fr 1fr 1fr;font-size:13px}
+  .pt-material,.pt-header span:nth-child(3){display:none}
+  .nav-links a{padding:12px 12px;font-size:10px;letter-spacing:1px}
+}
+@media(max-width:480px){
+  .products-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .about-stats{flex-direction:column;gap:18px}
+  .pt-header,.pt-row{grid-template-columns:1.5fr 1fr 1fr;gap:8px}
+}
+
+/* ========== ORNAMENT DIVIDER ========== */
+.ornament-divider{
+  text-align:center;color:var(--gold-pale);
+  font-size:20px;letter-spacing:18px;padding:24px 0;opacity:0.45;
+}
+
+/* ========== QUALITY BADGES ========== */
+.quality-strip{
+  background:linear-gradient(135deg,#1e1a12,#2d2416);
+  padding:32px 5%;
+  display:flex;justify-content:center;gap:60px;flex-wrap:wrap;
+}
+.quality-item{
+  display:flex;align-items:center;gap:14px;
+}
+.qi-icon{font-size:30px;color:var(--gold)}
+.qi-text .qi-title{
+  font-family:'Cinzel',serif;font-size:12px;letter-spacing:2px;
+  color:var(--gold-pale);text-transform:uppercase;
+}
+.qi-text .qi-sub{font-size:11px;color:rgba(240,216,152,0.45);margin-top:2px}
+
+/* ========== FLOATING WA BUTTON ========== */
+.wa-float{
+  position:fixed;bottom:28px;right:28px;z-index:999;
+  width:58px;height:58px;border-radius:50%;
+  background:linear-gradient(135deg,#1a7a45,#25d366);
+  display:flex;align-items:center;justify-content:center;
+  font-size:26px;color:white;
+  box-shadow:0 6px 28px rgba(37,211,102,0.5);
+  cursor:pointer;transition:var(--transition);
+  border:none;
+  animation:pulse-wa 2.5s ease-in-out infinite;
+}
+.wa-float:hover{transform:scale(1.1)}
+@keyframes pulse-wa{
+  0%,100%{box-shadow:0 6px 28px rgba(37,211,102,0.5)}
+  50%{box-shadow:0 6px 44px rgba(37,211,102,0.75),0 0 0 12px rgba(37,211,102,0.1)}
+}
+</style>
+</head>
+<body>
+
+<!-- ====== HEADER ====== -->
+<header>
+  <div class="header-top">
+    <div class="logo-wrap">
+      <div class="logo-icon">S</div>
+      <div>
+        <div class="logo-text">SIVA PHOTO FRAMES</div>
+        <div class="logo-sub">Premium &bull; Luxury &bull; Handcrafted</div>
+      </div>
+    </div>
+    <div class="header-contact">
+      <div class="contact-item"><span class="ico">📞</span> <a href="tel:+919876543210">+91 98765 43210</a></div>
+      <div class="contact-item"><span class="ico">📱</span> <a href="https://wa.me/919876543210">WhatsApp</a></div>
+      <div class="contact-item"><span class="ico">📍</span> 123 Main Road, Erode, TN</div>
+    </div>
+  </div>
+  <nav>
+    <div class="nav-links">
+      <a href="#" class="active" onclick="showPage('home',this)">Home</a>
+      <a href="#" onclick="showPage('products',this)">Products</a>
+      <a href="#" onclick="showPage('gallery',this)">Gallery</a>
+      <a href="#" onclick="showPage('pricing',this)">Pricing</a>
+      <a href="#" onclick="showPage('contact',this)">Contact</a>
+    </div>
+    <a href="https://wa.me/919876543210" class="btn-gold nav-cta" style="font-size:11px;padding:9px 20px;">📱 Order Now</a>
+  </nav>
+</header>
+
+<!-- ====== FLOATING WHATSAPP ====== -->
+<button class="wa-float" onclick="window.open('https://wa.me/919876543210','_blank')" title="Chat on WhatsApp">💬</button>
+
+<!-- ====================================================================
+     PAGE: HOME
+===================================================================== -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-gold-line"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Erode's Premier Frame Studio</div>
+      <h1>Premium Photo Frames for Your <em>Precious Memories</em></h1>
+      <p>Elegant Designs · Superior Quality · Affordable Prices. Every frame is a masterpiece crafted to last a lifetime — from intimate 6×8 portraits to grand 24×36 gallery displays.</p>
+      <div class="btn-row">
+        <button class="btn-gold" onclick="showPage('products',null)">✦ View Collection</button>
+        <button class="btn-whatsapp" onclick="window.open('https://wa.me/919876543210','_blank')">💬 WhatsApp Us</button>
+        <button class="btn-outline" onclick="showPage('contact',null)">Contact Us</button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="frame-showcase">
+        <div class="frame-outer">
+          <div class="frame-inner">
+            <div class="frame-canvas">
+              <div class="fc-icon">🏎️</div>
+              <div class="fc-label">LUXURY FRAME</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITY STRIP -->
+  <div class="quality-strip">
+    <div class="quality-item"><div class="qi-icon">🏆</div><div class="qi-text"><div class="qi-title">Premium Quality</div><div class="qi-sub">Handcrafted Frames</div></div></div>
+    <div class="quality-item"><div class="qi-icon">🚚</div><div class="qi-text"><div class="qi-title">Fast Delivery</div><div class="qi-sub">Same-Day Available</div></div></div>
+    <div class="quality-item"><div class="qi-icon">✂️</div><div class="qi-text"><div class="qi-title">Custom Sizes</div><div class="qi-sub">Any Dimension</div></div></div>
+    <div class="quality-item"><div class="qi-icon">💰</div><div class="qi-text"><div class="qi-title">Best Prices</div><div class="qi-sub">Starting ₹250</div></div></div>
+  </div>
+
+  <!-- PRODUCTS GRID -->
+  <div class="section-header">
+    <div class="section-kicker">Our Collection</div>
+    <h2>Premium <em>Frame Sizes</em></h2>
+    <p>Choose from our carefully curated range of frame sizes — each crafted with the finest materials for lasting elegance.</p>
+    <div class="gold-divider"></div>
+  </div>
+
+  <div class="products-grid">
+    <!-- 6x8 -->
+    <div class="product-card" onclick="showPage('p6x8',null)">
+      <div class="card-img">
+        <div class="card-img-canvas" style="background:linear-gradient(135deg,#1a1410,#2e2210)">
+          <div style="font-size:52px">🏎️</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(212,168,75,0.5);letter-spacing:2px">Luxury Sports Car</div>
+        </div>
+        <div class="card-badge-size">6×8 INCH</div>
+        <div class="card-price-badge">₹250</div>
+      </div>
+      <div class="card-body">
+        <h3>6×8 Premium Frame</h3>
+        <p>Perfect for portraits and desk displays. Gold finish with beveled glass for a classic, refined look.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-price">₹250 <span>/ frame</span></div>
+        <button class="btn-card">View Details</button>
+      </div>
+    </div>
+    <!-- 12x8 -->
+    <div class="product-card" onclick="showPage('p12x8',null)">
+      <div class="card-img">
+        <div class="card-img-canvas" style="background:linear-gradient(135deg,#121a1a,#102228)">
+          <div style="font-size:52px">🚗</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(212,168,75,0.5);letter-spacing:2px">Luxury Supercar</div>
+        </div>
+        <div class="card-badge-size">12×8 INCH</div>
+        <div class="card-price-badge">₹450</div>
+      </div>
+      <div class="card-body">
+        <h3>12×8 Landscape Frame</h3>
+        <p>Ideal for panoramic shots and landscape photography. Silver frame with anti-glare glass.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-price">₹450 <span>/ frame</span></div>
+        <button class="btn-card">View Details</button>
+      </div>
+    </div>
+    <!-- 12x18 -->
+    <div class="product-card" onclick="showPage('p12x18',null)">
+      <div class="card-img">
+        <div class="card-img-canvas" style="background:linear-gradient(135deg,#181412,#2e2010)">
+          <div style="font-size:52px">🚙</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(212,168,75,0.5);letter-spacing:2px">Top-View Luxury</div>
+        </div>
+        <div class="card-badge-size">12×18 INCH</div>
+        <div class="card-price-badge">₹600</div>
+      </div>
+      <div class="card-body">
+        <h3>12×18 Portrait Frame</h3>
+        <p>Classic portrait size for professional photos and family portraits. Wooden walnut finish.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-price">₹600 <span>/ frame</span></div>
+        <button class="btn-card">View Details</button>
+      </div>
+    </div>
+    <!-- 14x20 -->
+    <div class="product-card" onclick="showPage('p14x20',null)">
+      <div class="card-img">
+        <div class="card-img-canvas" style="background:linear-gradient(135deg,#12181a,#102028)">
+          <div style="font-size:52px">🏁</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(212,168,75,0.5);letter-spacing:2px">Luxury Sedan</div>
+        </div>
+        <div class="card-badge-size">14×20 INCH</div>
+        <div class="card-price-badge">₹1,050</div>
+      </div>
+      <div class="card-body">
+        <h3>14×20 Gallery Frame</h3>
+        <p>Gallery-grade display for feature photographs. Modern silver design with deep black mat.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-price">₹1,050 <span>/ frame</span></div>
+        <button class="btn-card">View Details</button>
+      </div>
+    </div>
+    <!-- 16x24 -->
+    <div class="product-card" onclick="showPage('p16x24',null)">
+      <div class="card-img">
+        <div class="card-img-canvas" style="background:linear-gradient(135deg,#141a14,#182818)">
+          <div style="font-size:52px">🚐</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(212,168,75,0.5);letter-spacing:2px">Luxury SUV</div>
+        </div>
+        <div class="card-badge-size">16×24 INCH</div>
+        <div class="card-price-badge">₹1,650</div>
+      </div>
+      <div class="card-body">
+        <h3>16×24 Statement Frame</h3>
+        <p>Bold statement piece for walls. Elegant black frame with UV-protective glass.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-price">₹1,650 <span>/ frame</span></div>
+        <button class="btn-card">View Details</button>
+      </div>
+    </div>
+    <!-- 20x30 -->
+    <div class="product-card" onclick="showPage('p20x30',null)">
+      <div class="card-img">
+        <div class="card-img-canvas" style="background:linear-gradient(135deg,#18141a,#241028)">
+          <div style="font-size:52px">🏆</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(212,168,75,0.5);letter-spacing:2px">Rear-View Supercar</div>
+        </div>
+        <div class="card-badge-size">20×30 INCH</div>
+        <div class="card-price-badge">₹2,000</div>
+      </div>
+      <div class="card-body">
+        <h3>20×30 Prestige Frame</h3>
+        <p>Prestigious large-format frame for living rooms and reception areas. Premium black finish.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-price">₹2,000 <span>/ frame</span></div>
+        <button class="btn-card">View Details</button>
+      </div>
+    </div>
+    <!-- 24x36 -->
+    <div class="product-card" onclick="showPage('p24x36',null)">
+      <div class="card-img">
+        <div class="card-img-canvas" style="background:linear-gradient(135deg,#1a1810,#2e2c08)">
+          <div style="font-size:52px">🏎️</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(212,168,75,0.5);letter-spacing:2px">Porsche Edition</div>
+        </div>
+        <div class="card-badge-size">24×36 INCH</div>
+        <div class="card-price-badge">₹2,600</div>
+      </div>
+      <div class="card-body">
+        <h3>24×36 Grand Frame</h3>
+        <p>The ultimate grand display for collectors and showrooms. Premium 24-karat gold leaf frame.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-price">₹2,600 <span>/ frame</span></div>
+        <button class="btn-card">View Details</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-frame-card"><div class="afc-icon">🪵</div><div class="afc-type">Wooden Frames</div></div>
+        <div class="about-frame-card"><div class="afc-icon">⬛</div><div class="afc-type">Black Frames</div></div>
+        <div class="about-frame-card"><div class="afc-icon">⬜</div><div class="afc-type">White Frames</div></div>
+        <div class="about-frame-card"><div class="afc-icon">✨</div><div class="afc-type">Gold Frames</div></div>
+        <div class="about-frame-card featured"><div class="afc-icon">🥈</div><div class="afc-type">Silver Frames &nbsp;·&nbsp; Custom Sizes Available</div></div>
+      </div>
+      <div class="about-text">
+        <h2>Crafting Memories <em>Since Decades</em></h2>
+        <p>At SIVA PHOTO FRAMES, we believe every photograph deserves a frame that honours its story. Our artisans handcraft each frame with meticulous attention to detail, using only the finest materials sourced from trusted suppliers.</p>
+        <p>From intimate 6×8 desktop frames to grand 24×36 gallery pieces, we offer a complete range of sizes, styles, and finishes — wooden, black, white, gold, and silver — with custom sizing available on request.</p>
+        <div class="about-stats">
+          <div class="stat-item"><div class="stat-num">5000+</div><div class="stat-label">Frames Sold</div></div>
+          <div class="stat-item"><div class="stat-num">15+</div><div class="stat-label">Years Experience</div></div>
+          <div class="stat-item"><div class="stat-num">7</div><div class="stat-label">Frame Sizes</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT PREVIEW -->
+  <section class="contact-section">
+    <div class="section-header" style="padding-top:0">
+      <div class="section-kicker">Find Us</div>
+      <h2>Visit Our <em>Showroom</em></h2>
+      <div class="gold-divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info-card">
+        <h3>SIVA PHOTO FRAMES</h3>
+        <div class="sub">Premium Frame Studio – Erode, Tamil Nadu</div>
+        <div class="contact-item-row">
+          <div class="ci-icon">📞</div>
+          <div class="ci-text"><div class="ci-label">Phone</div><div class="ci-val"><a href="tel:+919876543210">+91 98765 43210</a></div></div>
+        </div>
+        <div class="contact-item-row">
+          <div class="ci-icon">💬</div>
+          <div class="ci-text"><div class="ci-label">WhatsApp</div><div class="ci-val"><a href="https://wa.me/919876543210">+91 98765 43210</a></div></div>
+        </div>
+        <div class="contact-item-row">
+          <div class="ci-icon">✉️</div>
+          <div class="ci-text"><div class="ci-label">Email</div><div class="ci-val"><a href="mailto:info@sivaphotoframes.com">info@sivaphotoframes.com</a></div></div>
+        </div>
+        <div class="contact-item-row">
+          <div class="ci-icon">📍</div>
+          <div class="ci-text"><div class="ci-label">Address</div><div class="ci-val">123 Main Road, Erode,<br>Tamil Nadu – 638001</div></div>
+        </div>
+        <div class="contact-item-row">
+          <div class="ci-icon">🕐</div>
+          <div class="ci-text"><div class="ci-label">Business Hours</div><div class="ci-val">Mon – Sat: 9:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 5:00 PM</div></div>
+        </div>
+      </div>
+      <div class="map-placeholder">
+        <div class="map-icon">🗺️</div>
+        <p>123 Main Road, Erode, Tamil Nadu</p>
+        <a href="https://maps.google.com/?q=Erode+Tamil+Nadu" target="_blank">Open in Google Maps →</a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+
+<!-- ====================================================================
+     PAGE: PRODUCTS (listing)
+===================================================================== -->
+<div id="page-products" class="page">
+  <div class="section-header">
+    <div class="section-kicker">All Products</div>
+    <h2>Our Complete <em>Frame Collection</em></h2>
+    <p>Explore all seven premium frame sizes — each with its own character, finish, and elegance.</p>
+    <div class="gold-divider"></div>
+  </div>
+  <div class="products-grid">
+    <div class="product-card" onclick="showPage('p6x8',null)"><div class="card-img"><div class="card-img-canvas" style="background:linear-gradient(135deg,#1a1410,#2e2210)"><div style="font-size:52px">🏎️</div><div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(212,168,75,0.5);letter-spacing:2px">Sports Car</div></div><div class="card-badge-size">6×8</div><div class="card-price-badge">₹250</div></div><div class="card-body"><h3>6×8 Premium Frame</h3><p>Gold finish, beveled glass, perfect for desk portraits.</p></div><div class="card-footer"><div class="card-price">₹250</div><button class="btn-card">View</button></div></div>
+    <div class="product-card" onclick="showPage('p12x8',null)"><div class="card-img"><div class="card-img-canvas" style="background:linear-gradient(135deg,#121a1a,#102228)"><div style="font-size:52px">🚗</div><div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(212,168,75,0.5);letter-spacing:2px">Supercar</div></div><div class="card-badge-size">12×8</div><div class="card-price-badge">₹450</div></div><div class="card-body"><h3>12×8 Landscape Frame</h3><p>Silver finish, anti-glare glass, panoramic display.</p></div><div class="card-footer"><div class="card-price">₹450</div><button class="btn-card">View</button></div></div>
+    <div class="product-card" onclick="showPage('p12x18',null)"><div class="card-img"><div class="card-img-canvas" style="background:linear-gradient(135deg,#181412,#2e2010)"><div style="font-size:52px">🚙</div><div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(212,168,75,0.5);letter-spacing:2px">Top View Car</div></div><div class="card-badge-size">12×18</div><div class="card-price-badge">₹600</div></div><div class="card-body"><h3>12×18 Portrait Frame</h3><p>Walnut wood finish, classic portrait orientation.</p></div><div class="card-footer"><div class="card-price">₹600</div><button class="btn-card">View</button></div></div>
+    <div class="product-card" onclick="showPage('p14x20',null)"><div class="card-img"><div class="card-img-canvas" style="background:linear-gradient(135deg,#12181a,#102028)"><div style="font-size:52px">🏁</div><div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(212,168,75,0.5);letter-spacing:2px">Luxury Sedan</div></div><div class="card-badge-size">14×20</div><div class="card-price-badge">₹1,050</div></div><div class="card-body"><h3>14×20 Gallery Frame</h3><p>Modern silver, deep black mat, gallery-grade.</p></div><div class="card-footer"><div class="card-price">₹1,050</div><button class="btn-card">View</button></div></div>
+    <div class="product-card" onclick="showPage('p16x24',null)"><div class="card-img"><div class="card-img-canvas" style="background:linear-gradient(135deg,#141a14,#182818)"><div style="font-size:52px">🚐</div><div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(212,168,75,0.5);letter-spacing:2px">Luxury SUV</div></div><div class="card-badge-size">16×24</div><div class="card-price-badge">₹1,650</div></div><div class="card-body"><h3>16×24 Statement Frame</h3><p>Bold black frame, UV-protective glass, wall statement.</p></div><div class="card-footer"><div class="card-price">₹1,650</div><button class="btn-card">View</button></div></div>
+    <div class="product-card" onclick="showPage('p20x30',null)"><div class="card-img"><div class="card-img-canvas" style="background:linear-gradient(135deg,#18141a,#241028)"><div style="font-size:52px">🏆</div><div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(212,168,75,0.5);letter-spacing:2px">Rear-View Supercar</div></div><div class="card-badge-size">20×30</div><div class="card-price-badge">₹2,000</div></div><div class="card-body"><h3>20×30 Prestige Frame</h3><p>Premium black frame, reception-grade display piece.</p></div><div class="card-footer"><div class="card-price">₹2,000</div><button class="btn-card">View</button></div></div>
+    <div class="product-card" onclick="showPage('p24x36',null)"><div class="card-img"><div class="card-img-canvas" style="background:linear-gradient(135deg,#1a1810,#2e2c08)"><div style="font-size:52px">🏎️</div><div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(212,168,75,0.5);letter-spacing:2px">Porsche Edition</div></div><div class="card-badge-size">24×36</div><div class="card-price-badge">₹2,600</div></div><div class="card-body"><h3>24×36 Grand Frame</h3><p>24k gold leaf finish — the ultimate collector's frame.</p></div><div class="card-footer"><div class="card-price">₹2,600</div><button class="btn-card">View</button></div></div>
+  </div>
+</div>
+
+
+<!-- ====================================================================
+     PRODUCT PAGE TEMPLATE HELPER
+===================================================================== -->
+<!-- ---- PAGE: 6x8 ---- -->
+<div id="page-p6x8" class="page">
+  <div class="product-detail">
+    <div class="detail-breadcrumb">
+      <a href="#" onclick="showPage('home',null)">Home</a> ›
+      <a href="#" onclick="showPage('products',null)">Products</a> ›
+      <span>6×8 Premium Frame</span>
+    </div>
+    <div class="detail-grid">
+      <div class="detail-frame-wrap">
+        <div class="main-frame-display">
+          <div class="frame-preview">
+            <div class="frame-gold">
+              <div class="fp-outer"><div class="fp-inner" style="width:260px;height:200px">
+                <div class="fp-canvas"><div class="icon">🏎️</div><div class="label">SPORTS CAR</div></div>
+              </div></div>
+            </div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px">
+          <div style="background:linear-gradient(135deg,#1e1a12,#2d2416);border-radius:6px;padding:16px;text-align:center;border:1px solid rgba(184,137,42,0.2)"><div style="font-size:28px">🏎️</div><div style="font-size:11px;letter-spacing:2px;color:var(--gold);font-family:'Cinzel',serif;margin-top:6px">FRONT VIEW</div></div>
+          <div style="background:linear-gradient(135deg,#1e1a12,#2d2416);border-radius:6px;padding:16px;text-align:center;border:1px solid rgba(184,137,42,0.2)"><div style="font-size:28px">✨</div><div style="font-size:11px;letter-spacing:2px;color:var(--gold);font-family:'Cinzel',serif;margin-top:6px">GOLD FINISH</div></div>
+        </div>
+      </div>
+      <div class="detail-info">
+        <div class="product-title">6×8 <em>Premium Frame</em></div>
+        <div class="product-rating"><div class="stars">★★★★★</div><div class="rating-count">4.9 / 5 (128 reviews)</div></div>
+        <div class="product-price-wrap">
+          <div class="price-label">Price</div>
+          <div class="price-main">₹250</div>
+          <div class="price-note">Inclusive of all taxes · Free gift wrapping</div>
+        </div>
+        <div class="spec-table">
+          <h4>Specifications</h4>
+          <div class="spec-row"><span class="spec-key">Frame Size</span><span class="spec-val">6 × 8 inches</span></div>
+          <div class="spec-row"><span class="spec-key">Photo Size</span><span class="spec-val">5 × 7 inches (fits standard)</span></div>
+          <div class="spec-row"><span class="spec-key">Frame Material</span><span class="spec-val">Solid Wood – Gold Finish</span></div>
+          <div class="spec-row"><span class="spec-key">Glass Type</span><span class="spec-val">High-Clarity Beveled Glass</span></div>
+          <div class="spec-row"><span class="spec-key">Orientation</span><span class="spec-val">Portrait &amp; Landscape</span></div>
+          <div class="spec-row"><span class="spec-key">Weight</span><span class="spec-val">320 grams</span></div>
+        </div>
+        <div class="feature-chips">
+          <div class="chip">Gold Finish</div><div class="chip">Beveled Glass</div>
+          <div class="chip">Wall &amp; Desk</div><div class="chip">Gift Ready</div><div class="chip">Anti-Rust</div>
+        </div>
+        <div class="action-row">
+          <button class="btn-buynow" onclick="window.open('https://wa.me/919876543210?text=I want to order 6x8 Premium Frame – ₹250','_blank')">🛒 Buy Now – ₹250</button>
+          <button class="btn-whatsapp" onclick="window.open('https://wa.me/919876543210?text=Hi, interested in 6x8 frame','_blank')">💬 WhatsApp Order</button>
+        </div>
+        <div class="detail-desc">
+          <h4>Product Description</h4>
+          <p>The 6×8 Premium Gold Frame is designed for those who cherish their most intimate memories. Crafted from select hardwood with a hand-applied gold leaf finish, this frame adds warmth and elegance to any desk or wall display. The beveled glass front protects your photograph while enhancing visual depth. Includes a sturdy back stand for desktop placement and wall-mount hardware. Available in gold, silver, black, and white finishes on request.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ---- PAGE: 12x8 ---- -->
+<div id="page-p12x8" class="page">
+  <div class="product-detail">
+    <div class="detail-breadcrumb"><a href="#" onclick="showPage('home',null)">Home</a> › <a href="#" onclick="showPage('products',null)">Products</a> › <span>12×8 Landscape Frame</span></div>
+    <div class="detail-grid">
+      <div class="detail-frame-wrap">
+        <div class="main-frame-display">
+          <div class="frame-preview">
+            <div class="frame-silver">
+              <div class="fp-outer"><div class="fp-inner" style="width:320px;height:200px">
+                <div class="fp-canvas"><div class="icon">🚗</div><div class="label">SUPERCAR</div></div>
+              </div></div>
+            </div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px">
+          <div style="background:linear-gradient(135deg,#1e1a12,#2d2416);border-radius:6px;padding:16px;text-align:center;border:1px solid rgba(184,137,42,0.2)"><div style="font-size:28px">🚗</div><div style="font-size:11px;letter-spacing:2px;color:var(--gold);font-family:'Cinzel',serif;margin-top:6px">SIDE VIEW</div></div>
+          <div style="background:linear-gradient(135deg,#1e1a12,#2d2416);border-radius:6px;padding:16px;text-align:center;border:1px solid rgba(184,137,42,0.2)"><div style="font-size:28px">🥈</div><div style="font-size:11px;letter-spacing:2px;color:var(--gold);font-family:'Cinzel',serif;margin-top:6px">SILVER FINISH</div></div>
+        </div>
+      </div>
+      <div class="detail-info">
+        <div class="product-title">12×8 <em>Landscape Frame</em></div>
+        <div class="product-rating"><div class="stars">★★★★★</div><div class="rating-count">4.8 / 5 (94 reviews)</div></div>
+        <div class="product-price-wrap"><div class="price-label">Price</div><div class="price-main">₹450</div><div class="price-note">Inclusive of all taxes · Free gift wrapping</div></div>
+        <div class="spec-table"><h4>Specifications</h4>
+          <div class="spec-row"><span class="spec-key">Frame Size</span><span class="spec-val">12 × 8 inches</span></div>
+          <div class="spec-row"><span class="spec-key">Photo Size</span><span class="spec-val">11 × 7 inches</span></div>
+          <div class="spec-row"><span class="spec-key">Frame Material</span><span class="spec-val">Aluminium – Silver Finish</span></div>
+          <div class="spec-row"><span class="spec-key">Glass Type</span><span class="spec-val">Anti-Glare Glass</span></div>
+          <div class="spec-row"><span class="spec-key">Orientation</span><span class="spec-val">Landscape / Horizontal</span></div>
+          <div class="spec-row"><span class="spec-key">Weight</span><span class="spec-val">480 grams</span></div>
+        </div>
+        <div class="feature-chips"><div class="chip">Silver Finish</div><div class="chip">Anti-Glare</div><div class="chip">Panoramic</div><div class="chip">Wall Mount</div></div>
+        <div class="action-row">
+          <button class="btn-buynow" onclick="window.open('https://wa.me/919876543210?text=I want to order 12x8 Landscape Frame – ₹450','_blank')">🛒 Buy Now – ₹450</button>
+          <button class="btn-whatsapp" onclick="window.open('https://wa.me/919876543210?text=Hi, interested in 12x8 frame','_blank')">💬 WhatsApp Order</button>
+        </div>
+        <div class="detail-desc"><h4>Product Description</h4><p>The 12×8 Landscape Frame is crafted for panoramic shots, car photography, and group photos. The brushed aluminium silver finish gives a sleek, modern look that complements both contemporary and traditional interiors. Anti-glare glass ensures vibrant colour reproduction in any lighting. Includes a wide-base stand and wall-mounting kit with spirit-level guide.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ---- PAGE: 12x18 ---- -->
+<div id="page-p12x18" class="page">
+  <div class="product-detail">
+    <div class="detail-breadcrumb"><a href="#" onclick="showPage('home',null)">Home</a> › <a href="#" onclick="showPage('products',null)">Products</a> › <span>12×18 Portrait Frame</span></div>
+    <div class="detail-grid">
+      <div class="detail-frame-wrap">
+        <div class="main-frame-display">
+          <div class="frame-preview">
+            <div class="frame-wood">
+              <div class="fp-outer"><div class="fp-inner" style="width:220px;height:320px">
+                <div class="fp-canvas"><div class="icon">🚙</div><div class="label">TOP VIEW</div></div>
+              </div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail-info">
+        <div class="product-title">12×18 <em>Portrait Frame</em></div>
+        <div class="product-rating"><div class="stars">★★★★★</div><div class="rating-count">4.9 / 5 (76 reviews)</div></div>
+        <div class="product-price-wrap"><div class="price-label">Price</div><div class="price-main">₹600</div><div class="price-note">Inclusive of all taxes · Free gift wrapping</div></div>
+        <div class="spec-table"><h4>Specifications</h4>
+          <div class="spec-row"><span class="spec-key">Frame Size</span><span class="spec-val">12 × 18 inches</span></div>
+          <div class="spec-row"><span class="spec-key">Photo Size</span><span class="spec-val">11 × 17 inches</span></div>
+          <div class="spec-row"><span class="spec-key">Frame Material</span><span class="spec-val">Teak Wood – Walnut Finish</span></div>
+          <div class="spec-row"><span class="spec-key">Glass Type</span><span class="spec-val">Crystal Clear Glass</span></div>
+          <div class="spec-row"><span class="spec-key">Orientation</span><span class="spec-val">Portrait / Vertical</span></div>
+          <div class="spec-row"><span class="spec-key">Weight</span><span class="spec-val">620 grams</span></div>
+        </div>
+        <div class="feature-chips"><div class="chip">Walnut Wood</div><div class="chip">Crystal Glass</div><div class="chip">Portrait</div><div class="chip">Natural Grain</div></div>
+        <div class="action-row">
+          <button class="btn-buynow" onclick="window.open('https://wa.me/919876543210?text=I want to order 12x18 Portrait Frame – ₹600','_blank')">🛒 Buy Now – ₹600</button>
+          <button class="btn-whatsapp" onclick="window.open('https://wa.me/919876543210?text=Hi, interested in 12x18 frame','_blank')">💬 WhatsApp Order</button>
+        </div>
+        <div class="detail-desc"><h4>Product Description</h4><p>The 12×18 Portrait Frame showcases the natural beauty of solid teak wood, hand-finished to a rich walnut tone. Perfect for professional portraits, graduation photos, and artistic prints. The natural wood grain adds warmth and character — no two frames are exactly alike. Crystal-clear glass allows full colour fidelity while protecting your photograph for generations.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ---- PAGE: 14x20 ---- -->
+<div id="page-p14x20" class="page">
+  <div class="product-detail">
+    <div class="detail-breadcrumb"><a href="#" onclick="showPage('home',null)">Home</a> › <a href="#" onclick="showPage('products',null)">Products</a> › <span>14×20 Gallery Frame</span></div>
+    <div class="detail-grid">
+      <div class="detail-frame-wrap">
+        <div class="main-frame-display">
+          <div class="frame-preview">
+            <div class="frame-silver">
+              <div class="fp-outer"><div class="fp-inner" style="width:250px;height:340px">
+                <div class="fp-canvas"><div class="icon">🏁</div><div class="label">LUXURY SEDAN</div></div>
+              </div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail-info">
+        <div class="product-title">14×20 <em>Gallery Frame</em></div>
+        <div class="product-rating"><div class="stars">★★★★★</div><div class="rating-count">4.8 / 5 (58 reviews)</div></div>
+        <div class="product-price-wrap"><div class="price-label">Price</div><div class="price-main">₹1,050</div><div class="price-note">Inclusive of all taxes · Free gift wrapping</div></div>
+        <div class="spec-table"><h4>Specifications</h4>
+          <div class="spec-row"><span class="spec-key">Frame Size</span><span class="spec-val">14 × 20 inches</span></div>
+          <div class="spec-row"><span class="spec-key">Photo Size</span><span class="spec-val">13 × 19 inches</span></div>
+          <div class="spec-row"><span class="spec-key">Frame Material</span><span class="spec-val">Modern Silver Alloy</span></div>
+          <div class="spec-row"><span class="spec-key">Mat Board</span><span class="spec-val">Deep Black Mat Included</span></div>
+          <div class="spec-row"><span class="spec-key">Glass Type</span><span class="spec-val">Museum-Quality Glass</span></div>
+          <div class="spec-row"><span class="spec-key">Weight</span><span class="spec-val">890 grams</span></div>
+        </div>
+        <div class="feature-chips"><div class="chip">Silver Alloy</div><div class="chip">Black Mat</div><div class="chip">Museum Glass</div><div class="chip">Gallery Grade</div></div>
+        <div class="action-row">
+          <button class="btn-buynow" onclick="window.open('https://wa.me/919876543210?text=I want to order 14x20 Gallery Frame – ₹1050','_blank')">🛒 Buy Now – ₹1,050</button>
+          <button class="btn-whatsapp" onclick="window.open('https://wa.me/919876543210?text=Hi, interested in 14x20 frame','_blank')">💬 WhatsApp Order</button>
+        </div>
+        <div class="detail-desc"><h4>Product Description</h4><p>The 14×20 Gallery Frame is built to museum standards, featuring a modern silver alloy surround and a deep black mat board that makes your photograph command attention. Museum-quality glass eliminates reflections while providing UV protection — ideal for valuable prints and professional photography. This is the frame of choice for home galleries, offices, and reception areas.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ---- PAGE: 16x24 ---- -->
+<div id="page-p16x24" class="page">
+  <div class="product-detail">
+    <div class="detail-breadcrumb"><a href="#" onclick="showPage('home',null)">Home</a> › <a href="#" onclick="showPage('products',null)">Products</a> › <span>16×24 Statement Frame</span></div>
+    <div class="detail-grid">
+      <div class="detail-frame-wrap">
+        <div class="main-frame-display">
+          <div class="frame-preview">
+            <div class="frame-black">
+              <div class="fp-outer"><div class="fp-inner" style="width:240px;height:360px">
+                <div class="fp-canvas"><div class="icon">🚐</div><div class="label">LUXURY SUV</div></div>
+              </div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail-info">
+        <div class="product-title">16×24 <em>Statement Frame</em></div>
+        <div class="product-rating"><div class="stars">★★★★★</div><div class="rating-count">4.9 / 5 (42 reviews)</div></div>
+        <div class="product-price-wrap"><div class="price-label">Price</div><div class="price-main">₹1,650</div><div class="price-note">Inclusive of all taxes · Free gift wrapping</div></div>
+        <div class="spec-table"><h4>Specifications</h4>
+          <div class="spec-row"><span class="spec-key">Frame Size</span><span class="spec-val">16 × 24 inches</span></div>
+          <div class="spec-row"><span class="spec-key">Photo Size</span><span class="spec-val">15 × 23 inches</span></div>
+          <div class="spec-row"><span class="spec-key">Frame Material</span><span class="spec-val">Premium Hardwood – Jet Black</span></div>
+          <div class="spec-row"><span class="spec-key">Glass Type</span><span class="spec-val">UV-Protective Glass</span></div>
+          <div class="spec-row"><span class="spec-key">Hanging</span><span class="spec-val">Heavy-Duty D-Ring System</span></div>
+          <div class="spec-row"><span class="spec-key">Weight</span><span class="spec-val">1.2 kg</span></div>
+        </div>
+        <div class="feature-chips"><div class="chip">Jet Black</div><div class="chip">UV Glass</div><div class="chip">Heavy Duty</div><div class="chip">Large Format</div></div>
+        <div class="action-row">
+          <button class="btn-buynow" onclick="window.open('https://wa.me/919876543210?text=I want to order 16x24 Statement Frame – ₹1650','_blank')">🛒 Buy Now – ₹1,650</button>
+          <button class="btn-whatsapp" onclick="window.open('https://wa.me/919876543210?text=Hi, interested in 16x24 frame','_blank')">💬 WhatsApp Order</button>
+        </div>
+        <div class="detail-desc"><h4>Product Description</h4><p>The 16×24 Statement Frame commands every wall it graces. Crafted from premium solid hardwood finished in deep jet black, this frame is designed to showcase bold, dramatic photographs — from luxury automobiles to breathtaking landscapes. UV-protective glass prevents colour fading for up to 75 years. Includes a heavy-duty D-ring hanging system rated for 10 kg.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ---- PAGE: 20x30 ---- -->
+<div id="page-p20x30" class="page">
+  <div class="product-detail">
+    <div class="detail-breadcrumb"><a href="#" onclick="showPage('home',null)">Home</a> › <a href="#" onclick="showPage('products',null)">Products</a> › <span>20×30 Prestige Frame</span></div>
+    <div class="detail-grid">
+      <div class="detail-frame-wrap">
+        <div class="main-frame-display">
+          <div class="frame-preview">
+            <div class="frame-black">
+              <div class="fp-outer"><div class="fp-inner" style="width:260px;height:380px">
+                <div class="fp-canvas"><div class="icon">🏆</div><div class="label">SUPERCAR REAR</div></div>
+              </div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail-info">
+        <div class="product-title">20×30 <em>Prestige Frame</em></div>
+        <div class="product-rating"><div class="stars">★★★★★</div><div class="rating-count">5.0 / 5 (29 reviews)</div></div>
+        <div class="product-price-wrap"><div class="price-label">Price</div><div class="price-main">₹2,000</div><div class="price-note">Inclusive of all taxes · White-glove delivery available</div></div>
+        <div class="spec-table"><h4>Specifications</h4>
+          <div class="spec-row"><span class="spec-key">Frame Size</span><span class="spec-val">20 × 30 inches</span></div>
+          <div class="spec-row"><span class="spec-key">Photo Size</span><span class="spec-val">19 × 29 inches</span></div>
+          <div class="spec-row"><span class="spec-key">Frame Material</span><span class="spec-val">Lacquered Hardwood – Matte Black</span></div>
+          <div class="spec-row"><span class="spec-key">Glass Type</span><span class="spec-val">Premium Float Glass 4mm</span></div>
+          <div class="spec-row"><span class="spec-key">Hanging</span><span class="spec-val">French Cleat System</span></div>
+          <div class="spec-row"><span class="spec-key">Weight</span><span class="spec-val">2.1 kg</span></div>
+        </div>
+        <div class="feature-chips"><div class="chip">Matte Black</div><div class="chip">4mm Glass</div><div class="chip">French Cleat</div><div class="chip">Prestige</div><div class="chip">Reception</div></div>
+        <div class="action-row">
+          <button class="btn-buynow" onclick="window.open('https://wa.me/919876543210?text=I want to order 20x30 Prestige Frame – ₹2000','_blank')">🛒 Buy Now – ₹2,000</button>
+          <button class="btn-whatsapp" onclick="window.open('https://wa.me/919876543210?text=Hi, interested in 20x30 frame','_blank')">💬 WhatsApp Order</button>
+        </div>
+        <div class="detail-desc"><h4>Product Description</h4><p>The 20×30 Prestige Frame is our flagship black frame — a showcase piece for reception halls, boardrooms, and luxury residences. The lacquered matte black hardwood surround exudes sophistication, while the 4mm premium float glass provides exceptional optical clarity. A French cleat hanging system ensures rock-solid wall placement. This frame transforms any photograph into an iconic display.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ---- PAGE: 24x36 ---- -->
+<div id="page-p24x36" class="page">
+  <div class="product-detail">
+    <div class="detail-breadcrumb"><a href="#" onclick="showPage('home',null)">Home</a> › <a href="#" onclick="showPage('products',null)">Products</a> › <span>24×36 Grand Frame</span></div>
+    <div class="detail-grid">
+      <div class="detail-frame-wrap">
+        <div class="main-frame-display">
+          <div class="frame-preview">
+            <div class="frame-gold">
+              <div class="fp-outer"><div class="fp-inner" style="width:270px;height:400px">
+                <div class="fp-canvas"><div class="icon">🏎️</div><div class="label">PORSCHE EDITION</div></div>
+              </div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail-info">
+        <div class="product-title">24×36 <em>Grand Frame</em></div>
+        <div class="product-rating"><div class="stars">★★★★★</div><div class="rating-count">5.0 / 5 (18 reviews)</div></div>
+        <div class="product-price-wrap"><div class="price-label">Price</div><div class="price-main">₹2,600</div><div class="price-note">Inclusive of all taxes · Signature white-glove delivery</div></div>
+        <div class="spec-table"><h4>Specifications</h4>
+          <div class="spec-row"><span class="spec-key">Frame Size</span><span class="spec-val">24 × 36 inches</span></div>
+          <div class="spec-row"><span class="spec-key">Photo Size</span><span class="spec-val">23 × 35 inches</span></div>
+          <div class="spec-row"><span class="spec-key">Frame Material</span><span class="spec-val">Solid Hardwood – 24K Gold Leaf</span></div>
+          <div class="spec-row"><span class="spec-key">Glass Type</span><span class="spec-val">Conservation-Grade UV Glass</span></div>
+          <div class="spec-row"><span class="spec-key">Mat Board</span><span class="spec-val">Cream Archival Mat</span></div>
+          <div class="spec-row"><span class="spec-key">Hanging</span><span class="spec-val">Professional French Cleat + Wire</span></div>
+          <div class="spec-row"><span class="spec-key">Weight</span><span class="spec-val">3.4 kg</span></div>
+        </div>
+        <div class="feature-chips"><div class="chip">24K Gold Leaf</div><div class="chip">UV Glass</div><div class="chip">Archival Mat</div><div class="chip">Collector's</div><div class="chip">Signature</div></div>
+        <div class="action-row">
+          <button class="btn-buynow" onclick="window.open('https://wa.me/919876543210?text=I want to order 24x36 Grand Frame – ₹2600','_blank')">🛒 Buy Now – ₹2,600</button>
+          <button class="btn-whatsapp" onclick="window.open('https://wa.me/919876543210?text=Hi, interested in 24x36 Grand Frame','_blank')">💬 WhatsApp Order</button>
+        </div>
+        <div class="detail-desc"><h4>Product Description</h4><p>The 24×36 Grand Frame is our most prestigious creation — a collector's masterpiece. Each frame is hand-finished with genuine 24-karat gold leaf applied by our master craftsmen. The cream archival mat board and conservation-grade UV glass offer museum-standard protection, ensuring your prized photograph remains vibrant for over a century. Presented in a luxury gift box with a certificate of craftsmanship. The ultimate framing experience, reserved for images that deserve nothing less than perfection.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ====================================================================
+     PAGE: GALLERY
+===================================================================== -->
+<div id="page-gallery" class="page">
+  <div class="section-header">
+    <div class="section-kicker">Showcase</div>
+    <h2>Our <em>Frame Gallery</em></h2>
+    <p>Browse our collection of framed luxury automobile photography — each piece a perfect marriage of automotive artistry and premium framing craft.</p>
+    <div class="gold-divider"></div>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item" onclick="showPage('p6x8',null)">
+      <div class="gi-frame-icon">🏎️</div><div class="gi-label">6×8 · Sports Car · Gold Frame</div>
+      <div class="gi-hover"><h4>6×8 GOLD FRAME</h4><p>₹250 · Click to view</p></div>
+    </div>
+    <div class="gallery-item" onclick="showPage('p12x8',null)">
+      <div class="gi-frame-icon">🚗</div><div class="gi-label">12×8 · Supercar · Silver Frame</div>
+      <div class="gi-hover"><h4>12×8 SILVER FRAME</h4><p>₹450 · Click to view</p></div>
+    </div>
+    <div class="gallery-item" onclick="showPage('p12x18',null)">
+      <div class="gi-frame-icon">🚙</div><div class="gi-label">12×18 · Top View · Walnut Frame</div>
+      <div class="gi-hover"><h4>12×18 WALNUT FRAME</h4><p>₹600 · Click to view</p></div>
+    </div>
+    <div class="gallery-item" onclick="showPage('p14x20',null)">
+      <div class="gi-frame-icon">🏁</div><div class="gi-label">14×20 · Luxury Sedan · Silver</div>
+      <div class="gi-hover"><h4>14×20 SILVER FRAME</h4><p>₹1,050 · Click to view</p></div>
+    </div>
+    <div class="gallery-item" onclick="showPage('p16x24',null)">
+      <div class="gi-frame-icon">🚐</div><div class="gi-label">16×24 · SUV · Black Frame</div>
+      <div class="gi-hover"><h4>16×24 BLACK FRAME</h4><p>₹1,650 · Click to view</p></div>
+    </div>
+    <div class="gallery-item" onclick="showPage('p20x30',null)">
+      <div class="gi-frame-icon">🏆</div><div class="gi-label">20×30 · Supercar Rear · Black</div>
+      <div class="gi-hover"><h4>20×30 BLACK FRAME</h4><p>₹2,000 · Click to view</p></div>
+    </div>
+    <div class="gallery-item" onclick="showPage('p24x36',null)">
+      <div class="gi-frame-icon">🏎️</div><div class="gi-label">24×36 · Porsche · Gold Leaf</div>
+      <div class="gi-hover"><h4>24×36 GOLD LEAF</h4><p>₹2,600 · Click to view</p></div>
+    </div>
+    <div class="gallery-item" style="cursor:default;opacity:0.6">
+      <div class="gi-frame-icon">✨</div><div class="gi-label">Custom Size · Any Photo · Any Finish</div>
+    </div>
+    <div class="gallery-item" style="cursor:default;opacity:0.6">
+      <div class="gi-frame-icon">📐</div><div class="gi-label">Bespoke Commissions Available</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ====================================================================
+     PAGE: PRICING
+===================================================================== -->
+<div id="page-pricing" class="page">
+  <div class="section-header">
+    <div class="section-kicker">Transparent Pricing</div>
+    <h2>Frame <em>Pricing Guide</em></h2>
+    <p>Clear, honest pricing on every frame size. No hidden charges. Free gift wrapping on all orders.</p>
+    <div class="gold-divider"></div>
+  </div>
+  <div class="pricing-section">
+    <div class="pricing-table">
+      <div class="pt-header">
+        <span>Frame</span><span>Size</span><span>Material</span><span>Price</span><span>Action</span>
+      </div>
+      <div class="pt-row"><div class="pt-name">6×8 Premium</div><div class="pt-size">6 × 8 in</div><div class="pt-material">Gold Finish Wood</div><div class="pt-price">₹250</div><div><button class="btn-pt" onclick="showPage('p6x8',null)">View & Order</button></div></div>
+      <div class="pt-row"><div class="pt-name">12×8 Landscape</div><div class="pt-size">12 × 8 in</div><div class="pt-material">Silver Aluminium</div><div class="pt-price">₹450</div><div><button class="btn-pt" onclick="showPage('p12x8',null)">View & Order</button></div></div>
+      <div class="pt-row"><div class="pt-name">12×18 Portrait</div><div class="pt-size">12 × 18 in</div><div class="pt-material">Walnut Wood</div><div class="pt-price">₹600</div><div><button class="btn-pt" onclick="showPage('p12x18',null)">View & Order</button></div></div>
+      <div class="pt-row"><div class="pt-name">14×20 Gallery</div><div class="pt-size">14 × 20 in</div><div class="pt-material">Silver Alloy + Black Mat</div><div class="pt-price">₹1,050</div><div><button class="btn-pt" onclick="showPage('p14x20',null)">View & Order</button></div></div>
+      <div class="pt-row"><div class="pt-name">16×24 Statement</div><div class="pt-size">16 × 24 in</div><div class="pt-material">Jet Black Hardwood</div><div class="pt-price">₹1,650</div><div><button class="btn-pt" onclick="showPage('p16x24',null)">View & Order</button></div></div>
+      <div class="pt-row"><div class="pt-name">20×30 Prestige</div><div class="pt-size">20 × 30 in</div><div class="pt-material">Lacquered Matte Black</div><div class="pt-price">₹2,000</div><div><button class="btn-pt" onclick="showPage('p20x30',null)">View & Order</button></div></div>
+      <div class="pt-row"><div class="pt-name">24×36 Grand</div><div class="pt-size">24 × 36 in</div><div class="pt-material">24K Gold Leaf</div><div class="pt-price">₹2,600</div><div><button class="btn-pt" onclick="showPage('p24x36',null)">View & Order</button></div></div>
+    </div>
+    <div style="background:var(--white);border-radius:12px;padding:32px;margin-top:28px;border:1px solid rgba(184,137,42,0.18);text-align:center">
+      <div style="font-family:'Cinzel',serif;font-size:12px;letter-spacing:3px;color:var(--gold);margin-bottom:12px">CUSTOM SIZING</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--charcoal);margin-bottom:10px">Need a <em>Different Size?</em></div>
+      <p style="color:var(--text-lt);font-size:14px;margin-bottom:20px">We offer fully custom frame sizes for any photograph. Contact us for a personalised quote.</p>
+      <button class="btn-whatsapp" onclick="window.open('https://wa.me/919876543210?text=I need a custom size frame quote','_blank')">💬 Get Custom Quote on WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ====================================================================
+     PAGE: CONTACT
+===================================================================== -->
+<div id="page-contact" class="page">
+  <div class="section-header">
+    <div class="section-kicker">Get In Touch</div>
+    <h2>Visit Our <em>Showroom</em></h2>
+    <p>We'd love to help you find the perfect frame. Visit us in Erode or reach out on WhatsApp.</p>
+    <div class="gold-divider"></div>
+  </div>
+  <section class="contact-section" style="padding-top:0">
+    <div class="contact-grid">
+      <div class="contact-info-card">
+        <h3>SIVA PHOTO FRAMES</h3>
+        <div class="sub">Premium Luxury Frame Studio – Est. 2008</div>
+        <div class="contact-item-row"><div class="ci-icon">📞</div><div class="ci-text"><div class="ci-label">Phone</div><div class="ci-val"><a href="tel:+919876543210" style="color:rgba(240,216,152,0.85)">+91 98765 43210</a></div></div></div>
+        <div class="contact-item-row"><div class="ci-icon">💬</div><div class="ci-text"><div class="ci-label">WhatsApp</div><div class="ci-val"><a href="https://wa.me/919876543210" style="color:rgba(240,216,152,0.85)">+91 98765 43210</a></div></div></div>
+        <div class="contact-item-row"><div class="ci-icon">✉️</div><div class="ci-text"><div class="ci-label">Email</div><div class="ci-val"><a href="mailto:info@sivaphotoframes.com" style="color:rgba(240,216,152,0.85)">info@sivaphotoframes.com</a></div></div></div>
+        <div class="contact-item-row"><div class="ci-icon">📍</div><div class="ci-text"><div class="ci-label">Showroom Address</div><div class="ci-val">123 Main Road, Erode,<br>Tamil Nadu – 638001, India</div></div></div>
+        <div class="contact-item-row"><div class="ci-icon">🕐</div><div class="ci-text"><div class="ci-label">Business Hours</div><div class="ci-val">Mon – Sat: 9:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 5:00 PM<br>Public Holidays: Call ahead</div></div></div>
+        <div style="margin-top:24px;display:flex;gap:12px">
+          <button class="btn-gold" onclick="window.open('https://wa.me/919876543210','_blank')">💬 Chat Now</button>
+          <button class="btn-outline" onclick="window.open('tel:+919876543210')">📞 Call Us</button>
+        </div>
+      </div>
+      <div class="map-placeholder">
+        <div class="map-icon">🗺️</div>
+        <p style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:2px">SHOWROOM LOCATION</p>
+        <p>123 Main Road, Erode, Tamil Nadu</p>
+        <a href="https://maps.google.com/?q=123+Main+Road+Erode+Tamil+Nadu+638001" target="_blank" style="color:var(--gold-lt);font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;border:1px solid rgba(184,137,42,0.4);padding:10px 22px;border-radius:20px;display:inline-block;margin-top:10px;transition:background 0.2s">OPEN IN GOOGLE MAPS →</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ====== FOOTER (all pages) ====== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="fb-logo">✦ SIVA PHOTO FRAMES</div>
+      <p>Premium handcrafted photo frames crafted with passion in Erode, Tamil Nadu. From intimate 6×8 portraits to grand 24×36 gallery displays — we frame your most precious memories.</p>
+      <div class="social-row">
+        <div class="social-btn" title="Facebook">f</div>
+        <div class="social-btn" title="Instagram">📷</div>
+        <div class="social-btn" title="WhatsApp" onclick="window.open('https://wa.me/919876543210','_blank')">💬</div>
+        <div class="social-btn" title="YouTube">▶</div>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#" onclick="showPage('home',null)">Home</a></li>
+        <li><a href="#" onclick="showPage('products',null)">Products</a></li>
+        <li><a href="#" onclick="showPage('gallery',null)">Gallery</a></li>
+        <li><a href="#" onclick="showPage('pricing',null)">Pricing</a></li>
+        <li><a href="#" onclick="showPage('contact',null)">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Frame Sizes</h4>
+      <ul>
+        <li><a href="#" onclick="showPage('p6x8',null)">6×8 – ₹250</a></li>
+        <li><a href="#" onclick="showPage('p12x8',null)">12×8 – ₹450</a></li>
+        <li><a href="#" onclick="showPage('p12x18',null)">12×18 – ₹600</a></li>
+        <li><a href="#" onclick="showPage('p14x20',null)">14×20 – ₹1,050</a></li>
+        <li><a href="#" onclick="showPage('p16x24',null)">16×24 – ₹1,650</a></li>
+        <li><a href="#" onclick="showPage('p20x30',null)">20×30 – ₹2,000</a></li>
+        <li><a href="#" onclick="showPage('p24x36',null)">24×36 – ₹2,600</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-hours">
+      <h4>Contact</h4>
+      <p>📞 +91 98765 43210<br>💬 +91 98765 43210<br>✉️ info@sivaphotoframes.com<br><br>📍 123 Main Road,<br>Erode, TN – 638001<br><br>🕐 Mon–Sat: 9AM – 8PM<br>Sun: 10AM – 5PM</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 SIVA PHOTO FRAMES · All Rights Reserved · Erode, Tamil Nadu</span>
+    <span>Crafted with ✦ in India</span>
+  </div>
+</footer>
+
+<script>
+// ========== PAGE NAVIGATION ==========
+function showPage(pageId, navEl) {
+  // Hide all pages
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  // Show target
+  const target = document.getElementById('page-' + pageId);
+  if (target) {
+    target.classList.add('active');
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+  // Update nav active state
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  if (navEl) navEl.classList.add('active');
+  else {
+    // Auto-highlight based on page
+    const map = {home:'Home',products:'Products',gallery:'Gallery',pricing:'Pricing',contact:'Contact'};
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      if (a.textContent.trim() === (map[pageId] || '')) a.classList.add('active');
+    });
+  }
+}
+
+// ========== INIT ==========
+document.addEventListener('DOMContentLoaded', () => {
+  showPage('home', null);
+  // Animate cards on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if(e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, {threshold: 0.1});
+  document.querySelectorAll('.product-card').forEach((card, i) => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(24px)';
+    card.style.transition = `opacity 0.5s ease ${i*0.07}s, transform 0.5s ease ${i*0.07}s, box-shadow 0.38s cubic-bezier(.4,0,.2,1), border-color 0.38s, translate 0.38s`;
+    observer.observe(card);
+  });
+});
+</script>
+</body>
+</html>
